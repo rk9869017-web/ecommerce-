@@ -369,6 +369,10 @@
             cursor: pointer;
             box-shadow: 0 6px 20px rgba(62, 39, 35, 0.12);
             transition: all 0.4s ease;
+            background: #f7f1e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .category-card:hover {
@@ -379,18 +383,19 @@
         .category-card img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            padding: 15px;
             transition: transform 0.5s ease;
         }
 
         .category-card:hover img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .category-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(43, 29, 24, 0.9), rgba(43, 29, 24, 0.2));
+            background: linear-gradient(to top, rgba(43, 29, 24, 0.85), rgba(43, 29, 24, 0.05));
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -1008,7 +1013,7 @@
             }
 
             .category-card {
-                height: 200px;
+                height: 220px;
             }
 
             .category-overlay h3 {
@@ -1183,7 +1188,7 @@
 
             <div class="categories-grid">
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=600&q=80" alt="Vintage Clocks">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%201.jpeg" alt="Vintage Clocks">
                     <div class="category-overlay">
                         <h3>Vintage Clocks</h3>
                         <p>12 Items</p>
@@ -1191,7 +1196,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=600&q=80" alt="Old Paintings">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Old Paintings">
                     <div class="category-overlay">
                         <h3>Old Paintings</h3>
                         <p>18 Items</p>
@@ -1199,7 +1204,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80" alt="Antique Jewellery">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Antique Jewellery">
                     <div class="category-overlay">
                         <h3>Antique Jewellery</h3>
                         <p>24 Items</p>
@@ -1207,7 +1212,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Ceramics & Pottery">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%204.jpeg" alt="Ceramics & Pottery">
                     <div class="category-overlay">
                         <h3>Ceramics & Pottery</h3>
                         <p>15 Items</p>
@@ -1215,7 +1220,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Vintage Furniture">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%205.jpeg" alt="Vintage Furniture">
                     <div class="category-overlay">
                         <h3>Vintage Furniture</h3>
                         <p>20 Items</p>
@@ -1223,7 +1228,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80" alt="Rare Books">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%206.jpeg" alt="Rare Books">
                     <div class="category-overlay">
                         <h3>Rare Books</h3>
                         <p>30 Items</p>
@@ -1231,7 +1236,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80" alt="Vintage Coins">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%207.jpeg" alt="Vintage Coins">
                     <div class="category-overlay">
                         <h3>Vintage Coins</h3>
                         <p>45 Items</p>
@@ -1239,7 +1244,7 @@
                 </div>
 
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80" alt="Brassware">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%208.jpeg" alt="Brassware">
                     <div class="category-overlay">
                         <h3>Brass & Metalware</h3>
                         <p>22 Items</p>
@@ -1265,7 +1270,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%201.jpeg" alt="Victorian Wall Clock">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%201.jpeg" alt="Vintage Wall Clock">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1273,7 +1278,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Clocks</div>
-                    <h3 class="product-name">Victorian Brass Wall Clock - 1890</h3>
+                    <h3 class="product-name">Vintage Brass Wall Clock - 1890</h3>
                     <div class="product-rating">★★★★★ <span>(48)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹18,500</span>
@@ -1287,7 +1292,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Rajasthani Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Old Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1295,7 +1300,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Old Paintings</div>
-                    <h3 class="product-name">Rajasthani Miniature Painting - 1920</h3>
+                    <h3 class="product-name">Antique Framed Painting - 1920</h3>
                     <div class="product-rating">★★★★☆ <span>(32)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹32,000</span>
@@ -1309,7 +1314,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Gold Necklace">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Antique Jewellery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1317,7 +1322,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Antique Jewellery</div>
-                    <h3 class="product-name">Mughal Gold Necklace Set - 1850</h3>
+                    <h3 class="product-name">Heritage Jewellery Piece - 1850</h3>
                     <div class="product-rating">★★★★★ <span>(76)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹85,000</span>
@@ -1330,7 +1335,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%204.jpeg" alt="Blue Pottery Vase">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%204.jpeg" alt="Ceramics & Pottery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1338,7 +1343,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Ceramics & Pottery</div>
-                    <h3 class="product-name">Jaipuri Blue Pottery Vase - 1940</h3>
+                    <h3 class="product-name">Antique Pottery Vase - 1940</h3>
                     <div class="product-rating">★★★★☆ <span>(21)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹12,500</span>
@@ -1352,7 +1357,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%205.jpeg" alt="Teak Wood Chair">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%205.jpeg" alt="Vintage Furniture">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1360,7 +1365,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Furniture</div>
-                    <h3 class="product-name">Carved Teak Wood Chair - 1900</h3>
+                    <h3 class="product-name">Carved Wooden Furniture - 1900</h3>
                     <div class="product-rating">★★★★★ <span>(54)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹42,000</span>
@@ -1381,7 +1386,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Rare Books</div>
-                    <h3 class="product-name">First Edition Poetry Book - 1895</h3>
+                    <h3 class="product-name">Vintage Rare Book - 1895</h3>
                     <div class="product-rating">★★★★☆ <span>(18)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹8,500</span>
@@ -1395,7 +1400,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%207.jpeg" alt="Old Coins">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%207.jpeg" alt="Vintage Coins">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1403,7 +1408,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Coins</div>
-                    <h3 class="product-name">British India Silver Coins Set</h3>
+                    <h3 class="product-name">Antique Coin Collection</h3>
                     <div class="product-rating">★★★★★ <span>(42)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹22,000</span>
@@ -1416,7 +1421,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%208.jpeg" alt="Brass Lamp">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%208.jpeg" alt="Brass & Metalware">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1424,7 +1429,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Brass & Metalware</div>
-                    <h3 class="product-name">Antique Brass Oil Lamp - 1880</h3>
+                    <h3 class="product-name">Antique Brass Artifact - 1880</h3>
                     <div class="product-rating">★★★★☆ <span>(29)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹6,800</span>
@@ -1438,7 +1443,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%209.jpeg" alt="Grandfather Clock">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%209.jpeg" alt="Vintage Clock">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1446,7 +1451,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Clocks</div>
-                    <h3 class="product-name">Grandfather Wooden Clock - 1875</h3>
+                    <h3 class="product-name">Antique Wooden Clock - 1875</h3>
                     <div class="product-rating">★★★★★ <span>(61)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹1,25,000</span>
@@ -1459,7 +1464,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2010.jpeg" alt="Oil Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2010.jpeg" alt="Old Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1467,7 +1472,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Old Paintings</div>
-                    <h3 class="product-name">Landscape Oil Painting - 1910</h3>
+                    <h3 class="product-name">Heritage Oil Painting - 1910</h3>
                     <div class="product-rating">★★★★☆ <span>(37)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹28,000</span>
@@ -1481,7 +1486,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2011.jpeg" alt="Kundan Earrings">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2011.jpeg" alt="Antique Jewellery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1489,7 +1494,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Antique Jewellery</div>
-                    <h3 class="product-name">Kundan Jhumka Earrings - 1900</h3>
+                    <h3 class="product-name">Royal Jewellery Ornament - 1900</h3>
                     <div class="product-rating">★★★★★ <span>(88)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹45,000</span>
@@ -1502,7 +1507,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2012.jpeg" alt="Porcelain Bowl">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2012.jpeg" alt="Ceramics & Pottery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1510,7 +1515,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Ceramics & Pottery</div>
-                    <h3 class="product-name">Chinese Porcelain Bowl - 1820</h3>
+                    <h3 class="product-name">Antique Ceramic Bowl - 1820</h3>
                     <div class="product-rating">★★★★☆ <span>(23)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹35,000</span>
@@ -1524,7 +1529,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2013.jpeg" alt="Wooden Table">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2013.jpeg" alt="Vintage Furniture">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1532,7 +1537,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Furniture</div>
-                    <h3 class="product-name">Rosewood Coffee Table - 1930</h3>
+                    <h3 class="product-name">Antique Wooden Table - 1930</h3>
                     <div class="product-rating">★★★★★ <span>(45)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹58,000</span>
@@ -1545,7 +1550,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2014.jpeg" alt="Leather Book">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2014.jpeg" alt="Rare Book">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1553,7 +1558,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Rare Books</div>
-                    <h3 class="product-name">Leather Bound Encyclopedia - 1880</h3>
+                    <h3 class="product-name">Antique Leather Book - 1880</h3>
                     <div class="product-rating">★★★★☆ <span>(15)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹14,500</span>
@@ -1567,7 +1572,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2015.jpeg" alt="Mughal Coins">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2015.jpeg" alt="Vintage Coins">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1575,7 +1580,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Coins</div>
-                    <h3 class="product-name">Mughal Era Gold Coins Set</h3>
+                    <h3 class="product-name">Heritage Coin Collection</h3>
                     <div class="product-rating">★★★★★ <span>(67)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹95,000</span>
@@ -1588,7 +1593,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2016.jpeg" alt="Brass Statue">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2016.jpeg" alt="Brass & Metalware">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1596,7 +1601,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Brass & Metalware</div>
-                    <h3 class="product-name">Lord Ganesha Brass Statue - 1920</h3>
+                    <h3 class="product-name">Antique Brass Statue - 1920</h3>
                     <div class="product-rating">★★★★☆ <span>(39)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹16,500</span>
@@ -1610,7 +1615,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2017.jpeg" alt="Pocket Watch">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2017.jpeg" alt="Vintage Clock">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1618,7 +1623,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Clocks</div>
-                    <h3 class="product-name">Silver Pocket Watch - 1890</h3>
+                    <h3 class="product-name">Antique Silver Clock - 1890</h3>
                     <div class="product-rating">★★★★★ <span>(52)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹24,000</span>
@@ -1631,7 +1636,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2018.jpeg" alt="Portrait Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2018.jpeg" alt="Old Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1653,7 +1658,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2019.jpeg" alt="Pearl Bracelet">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2019.jpeg" alt="Antique Jewellery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1661,7 +1666,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Antique Jewellery</div>
-                    <h3 class="product-name">Pearl & Gold Bracelet - 1885</h3>
+                    <h3 class="product-name">Vintage Jewellery Ornament - 1885</h3>
                     <div class="product-rating">★★★★★ <span>(73)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹38,000</span>
@@ -1674,7 +1679,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2020.jpeg" alt="Clay Pot">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2020.jpeg" alt="Ceramics & Pottery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1682,7 +1687,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Ceramics & Pottery</div>
-                    <h3 class="product-name">Terracotta Water Pot - 1935</h3>
+                    <h3 class="product-name">Antique Clay Pot - 1935</h3>
                     <div class="product-rating">★★★★☆ <span>(19)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹4,200</span>
@@ -1696,7 +1701,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/mirror%201.jpeg" alt="Wooden Cabinet">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/mirror%201.jpeg" alt="Vintage Mirror">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1704,7 +1709,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Furniture</div>
-                    <h3 class="product-name">Teak Wood Cabinet - 1925</h3>
+                    <h3 class="product-name">Antique Wooden Mirror - 1925</h3>
                     <div class="product-rating">★★★★★ <span>(41)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹78,000</span>
@@ -1725,7 +1730,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Rare Books</div>
-                    <h3 class="product-name">Ancient India Map - 1870</h3>
+                    <h3 class="product-name">Antique Collectible Map - 1870</h3>
                     <div class="product-rating">★★★★☆ <span>(26)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹11,500</span>
@@ -1739,7 +1744,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Silver Coin">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Vintage Coin">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1747,7 +1752,7 @@
                 </div>
                 <div class="product-info">
                     <div class="product-category">Vintage Coins</div>
-                    <h3 class="product-name">Ashoka Era Silver Coin</h3>
+                    <h3 class="product-name">Rare Heritage Coin</h3>
                     <div class="product-rating">★★★★★ <span>(58)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹65,000</span>
@@ -1760,15 +1765,15 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Brass Vase">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Antique Jewellery">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
                     </div>
                 </div>
                 <div class="product-info">
-                    <div class="product-category">Brass & Metalware</div>
-                    <h3 class="product-name">Engraved Brass Vase - 1910</h3>
+                    <div class="product-category">Antique Jewellery</div>
+                    <h3 class="product-name">Collectible Jewellery Piece - 1910</h3>
                     <div class="product-rating">★★★★☆ <span>(34)</span></div>
                     <div class="product-price">
                         <span class="price-current">₹9,800</span>
