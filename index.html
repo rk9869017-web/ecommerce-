@@ -436,20 +436,24 @@
 
         .product-image {
             position: relative;
-            height: 240px;
+            height: 260px;
             overflow: hidden;
             background: #f7f1e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .product-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            padding: 10px;
             transition: transform 0.5s ease;
         }
 
         .product-card:hover .product-image img {
-            transform: scale(1.08);
+            transform: scale(1.05);
         }
 
         .product-badge {
@@ -464,6 +468,7 @@
             text-transform: uppercase;
             padding: 5px 12px;
             border-radius: 3px;
+            z-index: 2;
         }
 
         .product-badge.sale {
@@ -481,6 +486,7 @@
             opacity: 0;
             transform: translateX(10px);
             transition: all 0.3s ease;
+            z-index: 2;
         }
 
         .product-card:hover .product-actions {
@@ -1015,7 +1021,7 @@
             }
 
             .product-image {
-                height: 220px;
+                height: 260px;
             }
 
             .product-actions {
@@ -1259,7 +1265,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Victorian Wall Clock">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%201.jpeg" alt="Victorian Wall Clock">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1281,7 +1287,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Rajasthani Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Rajasthani Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1303,7 +1309,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Gold Necklace">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Gold Necklace">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1324,7 +1330,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Blue Pottery Vase">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%204.jpeg" alt="Blue Pottery Vase">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1346,7 +1352,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Teak Wood Chair">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%205.jpeg" alt="Teak Wood Chair">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1367,7 +1373,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Rare Book">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%206.jpeg" alt="Rare Book">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1389,7 +1395,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Old Coins">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%207.jpeg" alt="Old Coins">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1410,7 +1416,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Lamp">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%208.jpeg" alt="Brass Lamp">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1432,7 +1438,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Grandfather Clock">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%209.jpeg" alt="Grandfather Clock">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1453,7 +1459,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Oil Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2010.jpeg" alt="Oil Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1475,7 +1481,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Kundan Earrings">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2011.jpeg" alt="Kundan Earrings">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1496,7 +1502,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Porcelain Bowl">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2012.jpeg" alt="Porcelain Bowl">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1518,7 +1524,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Wooden Table">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2013.jpeg" alt="Wooden Table">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1539,7 +1545,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Leather Book">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2014.jpeg" alt="Leather Book">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1561,7 +1567,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Mughal Coins">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2015.jpeg" alt="Mughal Coins">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1582,7 +1588,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Statue">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2016.jpeg" alt="Brass Statue">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1604,7 +1610,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Pocket Watch">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2017.jpeg" alt="Pocket Watch">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1625,7 +1631,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Portrait Painting">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2018.jpeg" alt="Portrait Painting">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1647,7 +1653,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Pearl Bracelet">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2019.jpeg" alt="Pearl Bracelet">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1668,7 +1674,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Clay Pot">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%2020.jpeg" alt="Clay Pot">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1690,7 +1696,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Hot</span>
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Wooden Cabinet">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/mirror%201.jpeg" alt="Wooden Cabinet">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1711,7 +1717,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge sale">Sale</span>
-                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Old Map">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%201.jpeg" alt="Old Map">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1733,7 +1739,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">Rare</span>
-                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Silver Coin">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%202.jpeg" alt="Silver Coin">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
@@ -1754,7 +1760,7 @@
             <div class="product-card">
                 <div class="product-image">
                     <span class="product-badge">New</span>
-                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Vase">
+                    <img src="https://antiquetreasures.rk9869017.workers.dev/antique%20items%203.jpeg" alt="Brass Vase">
                     <div class="product-actions">
                         <button class="action-btn" title="Wishlist">❤️</button>
                         <button class="action-btn" title="Quick View">👁️</button>
