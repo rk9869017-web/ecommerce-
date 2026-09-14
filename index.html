@@ -15,6 +15,7 @@
         body {
             background: #fdfaf6;
             color: #333;
+            overflow-x: hidden;
         }
 
         /* ===== HEADER ===== */
@@ -795,11 +796,22 @@
             .nav-container {
                 flex-wrap: wrap;
                 gap: 15px;
+                justify-content: space-between;
+            }
+
+            nav {
+                order: 3;
+                width: 100%;
             }
 
             nav ul {
                 gap: 18px;
                 font-size: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-bottom: 12px;
+                border-top: 1px solid rgba(245, 230, 211, 0.15);
+                padding-top: 12px;
             }
 
             .logo h1 {
@@ -808,6 +820,8 @@
 
             .top-bar {
                 font-size: 11px;
+                flex-wrap: wrap;
+                gap: 6px;
             }
 
             .hero {
@@ -853,31 +867,234 @@
         }
 
         @media (max-width: 576px) {
-            nav {
-                display: none;
+            header {
+                padding: 0 15px;
+            }
+
+            .top-bar {
+                justify-content: center;
+                text-align: center;
+                font-size: 10px;
+                padding: 6px 0;
             }
 
             .top-bar span:last-child {
                 display: none;
             }
 
+            .nav-container {
+                padding: 12px 0;
+                gap: 10px;
+            }
+
+            .logo-icon {
+                font-size: 24px;
+            }
+
+            .logo h1 {
+                font-size: 18px;
+            }
+
+            .logo-tagline {
+                font-size: 9px;
+                letter-spacing: 1px;
+            }
+
+            nav {
+                order: 3;
+                width: 100%;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 13px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .header-icons {
+                gap: 10px;
+            }
+
+            .icon-btn {
+                width: 34px;
+                height: 34px;
+                font-size: 14px;
+            }
+
+            .cart-count {
+                width: 16px;
+                height: 16px;
+                font-size: 9px;
+            }
+
+            .hero {
+                min-height: 65vh;
+                padding: 40px 18px;
+            }
+
             .hero-title {
-                font-size: 28px;
+                font-size: 26px;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 14px;
+                margin-bottom: 30px;
             }
 
             .hero-badge {
                 font-size: 10px;
                 padding: 6px 16px;
                 letter-spacing: 2px;
+                margin-bottom: 18px;
             }
 
-            .categories-grid,
-            .products-grid {
-                grid-template-columns: 1fr;
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 13px 20px;
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .hero-scroll {
+                font-size: 20px;
+                bottom: 15px;
+            }
+
+            .section {
+                padding: 45px 15px;
+            }
+
+            .section-header {
+                margin-bottom: 30px;
+            }
+
+            .section-subtitle {
+                font-size: 11px;
+                letter-spacing: 2px;
             }
 
             .section-title {
-                font-size: 24px;
+                font-size: 22px;
+            }
+
+            .section-desc {
+                font-size: 13px;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .category-card {
+                height: 200px;
+            }
+
+            .category-overlay h3 {
+                font-size: 17px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .product-image {
+                height: 220px;
+            }
+
+            .product-actions {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            .product-name {
+                font-size: 15px;
+                min-height: auto;
+            }
+
+            .price-current {
+                font-size: 18px;
+            }
+
+            footer {
+                padding: 35px 15px 0;
+                margin-top: 40px;
+            }
+
+            .footer-col h3 {
+                font-size: 14px;
+            }
+
+            .footer-about p,
+            .footer-links a,
+            .footer-contact p {
+                font-size: 13px;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .newsletter-form input {
+                border-right: 1px solid rgba(201, 169, 97, 0.3);
+                border-radius: 4px;
+                width: 100%;
+            }
+
+            .newsletter-form button {
+                border-radius: 4px;
+                width: 100%;
+                padding: 11px;
+            }
+
+            .footer-bottom {
+                font-size: 12px;
+                padding: 18px 0;
+            }
+
+            .footer-bottom-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo h1 {
+                font-size: 16px;
+            }
+
+            .logo-tagline {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 22px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .icon-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+
+            nav ul {
+                gap: 10px;
+                font-size: 12px;
             }
         }
     </style>
