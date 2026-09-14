@@ -304,6 +304,290 @@
             50% { transform: translateX(-50%) translateY(10px); }
         }
 
+        /* ===== SECTION COMMON ===== */
+        .section {
+            padding: 80px 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-subtitle {
+            color: #c9a961;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            color: #3e2723;
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .section-title span {
+            color: #c9a961;
+            font-style: italic;
+        }
+
+        .section-desc {
+            color: #7a6a55;
+            font-size: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ===== CATEGORIES SECTION ===== */
+        .categories-section {
+            background: #f7f1e8;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .category-card {
+            position: relative;
+            height: 260px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(62, 39, 35, 0.12);
+            transition: all 0.4s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(62, 39, 35, 0.25);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(43, 29, 24, 0.9), rgba(43, 29, 24, 0.2));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            color: #f5e6d3;
+        }
+
+        .category-overlay h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .category-overlay p {
+            font-size: 12px;
+            color: #c9a961;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ===== FEATURED PRODUCTS SECTION ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(62, 39, 35, 0.08);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(62, 39, 35, 0.18);
+        }
+
+        .product-image {
+            position: relative;
+            height: 240px;
+            overflow: hidden;
+            background: #f7f1e8;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.08);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #c9a961;
+            color: #2b1d18;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+
+        .product-badge.sale {
+            background: #8b3a2f;
+            color: #f5e6d3;
+        }
+
+        .product-actions {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover .product-actions {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .action-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #3e2723;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s;
+        }
+
+        .action-btn:hover {
+            background: #c9a961;
+            color: #fff;
+        }
+
+        .product-info {
+            padding: 18px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .product-category {
+            font-size: 11px;
+            color: #c9a961;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #3e2723;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            min-height: 44px;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: #c9a961;
+            margin-bottom: 10px;
+        }
+
+        .product-rating span {
+            color: #8a7a63;
+            margin-left: 4px;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            margin-top: auto;
+        }
+
+        .price-current {
+            font-size: 20px;
+            font-weight: 700;
+            color: #3e2723;
+        }
+
+        .price-old {
+            font-size: 14px;
+            color: #a89478;
+            text-decoration: line-through;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            background: #3e2723;
+            color: #f5e6d3;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .add-to-cart:hover {
+            background: #c9a961;
+            color: #2b1d18;
+        }
+
         /* ===== FOOTER ===== */
         footer {
             background: #2b1d18;
@@ -477,6 +761,13 @@
         }
 
         /* ===== RESPONSIVE ===== */
+        @media (max-width: 1200px) {
+            .categories-grid,
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         @media (max-width: 992px) {
             .footer-container {
                 grid-template-columns: 1fr 1fr;
@@ -484,6 +775,15 @@
 
             .hero-title {
                 font-size: 46px;
+            }
+
+            .categories-grid,
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 32px;
             }
         }
 
@@ -528,6 +828,14 @@
                 font-size: 13px;
             }
 
+            .section {
+                padding: 60px 20px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
             footer {
                 padding: 40px 20px 0;
             }
@@ -561,6 +869,15 @@
                 font-size: 10px;
                 padding: 6px 16px;
                 letter-spacing: 2px;
+            }
+
+            .categories-grid,
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 24px;
             }
         }
     </style>
@@ -625,11 +942,618 @@
         <div class="hero-scroll">⌄</div>
     </section>
 
-    <!-- ===== PAGE CONTENT PLACEHOLDER ===== -->
-    <main style="min-height: 40vh; padding: 60px 40px; text-align: center;">
-        <h2 style="color: #3e2723; font-size: 32px; margin-bottom: 15px;">Welcome to Antique Treasures</h2>
-        <p style="color: #7a6a55; font-size: 16px;">Yahan aapke products ka section aayega...</p>
-    </main>
+    <!-- ===== CATEGORIES SECTION ===== -->
+    <section class="section categories-section">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <div class="section-header">
+                <div class="section-subtitle">✦ Browse By ✦</div>
+                <h2 class="section-title">Shop Our <span>Categories</span></h2>
+                <p class="section-desc">
+                    Har category me chhupi hain ek alag duniya — apni pasand ki
+                    antique cheez dhoondhiye.
+                </p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=600&q=80" alt="Vintage Clocks">
+                    <div class="category-overlay">
+                        <h3>Vintage Clocks</h3>
+                        <p>12 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=600&q=80" alt="Old Paintings">
+                    <div class="category-overlay">
+                        <h3>Old Paintings</h3>
+                        <p>18 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80" alt="Antique Jewellery">
+                    <div class="category-overlay">
+                        <h3>Antique Jewellery</h3>
+                        <p>24 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80" alt="Ceramics & Pottery">
+                    <div class="category-overlay">
+                        <h3>Ceramics & Pottery</h3>
+                        <p>15 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Vintage Furniture">
+                    <div class="category-overlay">
+                        <h3>Vintage Furniture</h3>
+                        <p>20 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80" alt="Rare Books">
+                    <div class="category-overlay">
+                        <h3>Rare Books</h3>
+                        <p>30 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=600&q=80" alt="Vintage Coins">
+                    <div class="category-overlay">
+                        <h3>Vintage Coins</h3>
+                        <p>45 Items</p>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80" alt="Brassware">
+                    <div class="category-overlay">
+                        <h3>Brass & Metalware</h3>
+                        <p>22 Items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS SECTION ===== -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-subtitle">✦ Handpicked For You ✦</div>
+            <h2 class="section-title">Featured <span>Products</span></h2>
+            <p class="section-desc">
+                Hamari sabse pasandida aur rare antique pieces — jo aapke ghar
+                ko de ek royal touch.
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Victorian Wall Clock">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Clocks</div>
+                    <h3 class="product-name">Victorian Brass Wall Clock - 1890</h3>
+                    <div class="product-rating">★★★★★ <span>(48)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹18,500</span>
+                        <span class="price-old">₹24,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Rajasthani Painting">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Old Paintings</div>
+                    <h3 class="product-name">Rajasthani Miniature Painting - 1920</h3>
+                    <div class="product-rating">★★★★☆ <span>(32)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹32,000</span>
+                        <span class="price-old">₹45,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Gold Necklace">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Antique Jewellery</div>
+                    <h3 class="product-name">Mughal Gold Necklace Set - 1850</h3>
+                    <div class="product-rating">★★★★★ <span>(76)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹85,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Blue Pottery Vase">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Ceramics & Pottery</div>
+                    <h3 class="product-name">Jaipuri Blue Pottery Vase - 1940</h3>
+                    <div class="product-rating">★★★★☆ <span>(21)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹12,500</span>
+                        <span class="price-old">₹16,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Teak Wood Chair">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Furniture</div>
+                    <h3 class="product-name">Carved Teak Wood Chair - 1900</h3>
+                    <div class="product-rating">★★★★★ <span>(54)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹42,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Rare Book">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Rare Books</div>
+                    <h3 class="product-name">First Edition Poetry Book - 1895</h3>
+                    <div class="product-rating">★★★★☆ <span>(18)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹8,500</span>
+                        <span class="price-old">₹12,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Old Coins">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Coins</div>
+                    <h3 class="product-name">British India Silver Coins Set</h3>
+                    <div class="product-rating">★★★★★ <span>(42)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹22,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Lamp">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Brass & Metalware</div>
+                    <h3 class="product-name">Antique Brass Oil Lamp - 1880</h3>
+                    <div class="product-rating">★★★★☆ <span>(29)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹6,800</span>
+                        <span class="price-old">₹9,500</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Grandfather Clock">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Clocks</div>
+                    <h3 class="product-name">Grandfather Wooden Clock - 1875</h3>
+                    <div class="product-rating">★★★★★ <span>(61)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹1,25,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Oil Painting">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Old Paintings</div>
+                    <h3 class="product-name">Landscape Oil Painting - 1910</h3>
+                    <div class="product-rating">★★★★☆ <span>(37)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹28,000</span>
+                        <span class="price-old">₹38,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Kundan Earrings">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Antique Jewellery</div>
+                    <h3 class="product-name">Kundan Jhumka Earrings - 1900</h3>
+                    <div class="product-rating">★★★★★ <span>(88)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹45,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Porcelain Bowl">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Ceramics & Pottery</div>
+                    <h3 class="product-name">Chinese Porcelain Bowl - 1820</h3>
+                    <div class="product-rating">★★★★☆ <span>(23)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹35,000</span>
+                        <span class="price-old">₹42,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Wooden Table">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Furniture</div>
+                    <h3 class="product-name">Rosewood Coffee Table - 1930</h3>
+                    <div class="product-rating">★★★★★ <span>(45)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹58,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Leather Book">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Rare Books</div>
+                    <h3 class="product-name">Leather Bound Encyclopedia - 1880</h3>
+                    <div class="product-rating">★★★★☆ <span>(15)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹14,500</span>
+                        <span class="price-old">₹19,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Mughal Coins">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Coins</div>
+                    <h3 class="product-name">Mughal Era Gold Coins Set</h3>
+                    <div class="product-rating">★★★★★ <span>(67)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹95,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Statue">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Brass & Metalware</div>
+                    <h3 class="product-name">Lord Ganesha Brass Statue - 1920</h3>
+                    <div class="product-rating">★★★★☆ <span>(39)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹16,500</span>
+                        <span class="price-old">₹21,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1495364141860-b0d03eccd065?auto=format&fit=crop&w=500&q=80" alt="Pocket Watch">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Clocks</div>
+                    <h3 class="product-name">Silver Pocket Watch - 1890</h3>
+                    <div class="product-rating">★★★★★ <span>(52)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹24,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=500&q=80" alt="Portrait Painting">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Old Paintings</div>
+                    <h3 class="product-name">Royal Portrait Painting - 1905</h3>
+                    <div class="product-rating">★★★★☆ <span>(28)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹52,000</span>
+                        <span class="price-old">₹68,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 19 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" alt="Pearl Bracelet">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Antique Jewellery</div>
+                    <h3 class="product-name">Pearl & Gold Bracelet - 1885</h3>
+                    <div class="product-rating">★★★★★ <span>(73)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹38,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 20 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Clay Pot">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Ceramics & Pottery</div>
+                    <h3 class="product-name">Terracotta Water Pot - 1935</h3>
+                    <div class="product-rating">★★★★☆ <span>(19)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹4,200</span>
+                        <span class="price-old">₹6,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 21 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Wooden Cabinet">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Furniture</div>
+                    <h3 class="product-name">Teak Wood Cabinet - 1925</h3>
+                    <div class="product-rating">★★★★★ <span>(41)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹78,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 22 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge sale">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=500&q=80" alt="Old Map">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Rare Books</div>
+                    <h3 class="product-name">Ancient India Map - 1870</h3>
+                    <div class="product-rating">★★★★☆ <span>(26)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹11,500</span>
+                        <span class="price-old">₹15,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 23 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Rare</span>
+                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=500&q=80" alt="Silver Coin">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Vintage Coins</div>
+                    <h3 class="product-name">Ashoka Era Silver Coin</h3>
+                    <div class="product-rating">★★★★★ <span>(58)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹65,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 24 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=500&q=80" alt="Brass Vase">
+                    <div class="product-actions">
+                        <button class="action-btn" title="Wishlist">❤️</button>
+                        <button class="action-btn" title="Quick View">👁️</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Brass & Metalware</div>
+                    <h3 class="product-name">Engraved Brass Vase - 1910</h3>
+                    <div class="product-rating">★★★★☆ <span>(34)</span></div>
+                    <div class="product-price">
+                        <span class="price-current">₹9,800</span>
+                        <span class="price-old">₹13,000</span>
+                    </div>
+                    <button class="add-to-cart">🛒 Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
